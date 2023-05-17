@@ -1,0 +1,32 @@
+body {
+    margin-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input {
+    padding: 15px;
+    outline: none;
+    font-size: 20px;
+    color: grey;
+    border-radius: 20px;
+}
+
+
+input:focus {
+   
+    background-color: transparent;
+    border: 1px solid rgb(74, 222, 222);
+    color: black;
+}
+
+button {
+    padding: 10px;
+    height: 3rem;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: green;
+    border-radius: 6px;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.5s;
+}
