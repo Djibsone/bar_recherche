@@ -1,10 +1,10 @@
 <?php 
-    //require './search_articles.php'; 
-    require './jointuree.php';
+    require './search_articles.php'; 
+    //require './jointuree.php';
     //$data = $articles->fetch();
     //var_dump($articles)
 
-    var_dump($r);
+    //var_dump($r);
 ?>
 
 <!DOCTYPE html>
@@ -26,8 +26,9 @@
 
   <?php if ($articles): ?>
     <h2>
-      Résultats 
-      <br>
+      Résultats :
+      <hr> 
+      
       <small><?= $searchResult['hits'] ?> résultat(s) en <?= $searchResult['execution_time'] ?></small>
 
     </h2> 
