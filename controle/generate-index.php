@@ -1,5 +1,5 @@
 <?php
-require_once './config/db.php';
+require_once '../config/db.php';
 
 use TeamTNT\TNTSearch\TNTSearch;
 
@@ -15,7 +15,7 @@ $tnt->loadConfig([
     'stemmer'   => \TeamTNT\TNTSearch\Stemmer\PorterStemmer::class//optional
 ]);
 
-$indexer = $tnt->createIndex('articles.index');
+$indexer = $tnt->createIndex('./packages/articles.index');
 $indexer->query('SELECT id, name, description FROM articles;');
 $indexer->setLanguage('french');
 $indexer->run();

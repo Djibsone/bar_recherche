@@ -1,5 +1,5 @@
 <?php 
-require_once 'config/db.php';
+require_once './config/db.php';
 
 use TeamTNT\TNTSearch\TNTSearch;
  
@@ -19,12 +19,12 @@ if (isset($_GET['q']) && !empty($_GET['q'])) {
         'storage'   => '.',
         'stemmer'   => \TeamTNT\TNTSearch\Stemmer\PorterStemmer::class//optional
     ]);
-    $tnt->selectIndex('articles.index');
+    $tnt->selectIndex('./packages/articles.index');
 
     $searchResult = $tnt->search($q, 10);
     //var_dump($searchResult);
     $ids = implode(',', $searchResult['ids']);
     //var_dump($ids);
 
-   $articles = searchArticles($ids);
+    $articles = searchArticles($ids);
 }

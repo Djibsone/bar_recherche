@@ -4,10 +4,11 @@ body {
 }
 
 input {
-    padding: 15px;
-    margin-right: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-right: 8px;
     outline: none;
-    font-size: 20px;
+    font-size: large;
     color: grey;
     border-radius: 20px;
 }
@@ -15,20 +16,23 @@ input {
 
 input:focus {
     background-color: transparent;
-    border: 2px solid rgb(74, 222, 222);
+    /* border: 2px solid rgb(74, 222, 222); */
+    border: 1px solid rgb(22, 22, 218);
     color: black;
 }
 
 button {
     padding: 10px;
-    height: 3rem;
+    height: 2.8rem;
     padding-right: 30px;
     padding-left: 30px;
     background-color:transparent;
-    border-radius: 6px;
+    border: 1px solid black;
+    border-radius: 20px;
     font-size: large;
     cursor: pointer;
     transition: 0.5s;
+    user-select: none;
 }
 
 button:active {

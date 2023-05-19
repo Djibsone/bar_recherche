@@ -1,5 +1,5 @@
 <?php 
-    require './search_articles.php'; 
+    require './controle/search_articles.php'; 
     //require './jointuree.php';
     //$data = $articles->fetch();
     //var_dump($articles)
@@ -13,7 +13,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Articles</title>
 </head>
 <body>
@@ -42,6 +42,6 @@
       <?php endforeach; ?>
     </ul>
   <?php endif; ?>
-
+  
 </body>
 </html>
